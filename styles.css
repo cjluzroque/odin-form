@@ -1,2 +1,11 @@
 /* Styling for Form */
 
+
+.form-row {
+    display: flex;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
