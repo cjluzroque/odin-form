@@ -9,3 +9,11 @@
     display: flex;
     flex-direction: column;
 }
+
+input {
+    border-color: #E5E7EB;
+}
+
+input:focus {
+    box-shadow: inset 3px 3px darkgray;
+}
