@@ -1,14 +1,20 @@
 /* Styling for Form */
 
+@font-face {
+    font-family: "norse";
+    src: url("Norse-Bold.otf") format("opentype");
+}
+
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 :root {
     --light-border: #E5E7EB;
     --darker-gray: ;
     --clr-success: green;
-    --clr-error: red;s
+    --clr-error: red;
 }
 
 body {
@@ -25,9 +31,31 @@ body {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 0;
     left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.logo-image {
+    height: 200px;
+}
+
+.logo-text {
+    color: white;
+    font-family: "norse";
+    font-size: 75px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .form-area {
