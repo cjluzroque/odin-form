@@ -1,18 +1,18 @@
 /* Styling for Form */
 
-
+* {
+    box-sizing: border-box;
+}
 
 :root {
     --light-border: #E5E7EB;
     --darker-gray: ;
     --clr-success: green;
     --clr-error: red;s
-
 }
 
 body {
     display: flex;
-    margin:0;
 }
 
 .left {
@@ -34,7 +34,6 @@ body {
     box-shadow: 3px 1px 1px 1px ;
 }
 
-
 .form-row {
     display: flex;
 }
@@ -55,7 +54,6 @@ input:user-valid {
 input:user-invalid {
     outline-color: var(--clr-error);
 }
-
 
 input:focus {
     box-shadow: inset 3px 3px darkgray;
