@@ -1,6 +1,40 @@
 /* Styling for Form */
 
 
+
+:root {
+    --light-border: #E5E7EB;
+    --darker-gray: ;
+    --clr-success: green;
+    --clr-error: red;s
+
+}
+
+body {
+    display: flex;
+    margin:0;
+}
+
+.left {
+    position: relative;
+}
+
+.green-bg {
+    height: 100vh;
+    width: 50vh;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.form-area {
+    box-shadow: 3px 1px 1px 1px ;
+}
+
+
 .form-row {
     display: flex;
 }
@@ -11,8 +45,17 @@
 }
 
 input {
-    border-color: #E5E7EB;
+    outline: 3px solid var(--light-border);
 }
+
+input:user-valid {
+    outline-color: var(--clr-success);
+}
+
+input:user-invalid {
+    outline-color: var(--clr-error);
+}
+
 
 input:focus {
     box-shadow: inset 3px 3px darkgray;
