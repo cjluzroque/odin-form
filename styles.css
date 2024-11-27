@@ -15,6 +15,7 @@
     --darker-gray: ;
     --clr-success: green;
     --clr-error: red;
+    --inp-focus: lightblue; 
 }
 
 body {
@@ -39,18 +40,18 @@ body {
     right: 0;
     top: 150px;
     margin: auto;
-    height: 200px;
-    background: rgba(0, 0, 0, .5);
+    height: 150px;
+    background: rgba(0, 0, 0, .4);
 }
 
 .logo-image {
-    height: 150px;
+    height: 75%;
 }
 
 .logo-text {
     color: white;
     font-family: "norse";
-    font-size: 90px;
+    font-size: 75px;
 }
 
 .right {
@@ -70,20 +71,43 @@ body {
 .input {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: 0.3em;
+}
+
+.desc {
+    margin-bottom: 5rem;
+}
+
+.form-area {
+    height: 300px;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 input {
-    outline: 3px solid var(--light-border);
+    outline: 1px solid var(--light-border);
+    border-radius: 5px;
+    height: 30px;
 }
 
-input:user-valid {
-    outline-color: var(--clr-success);
+input:not(:placeholder-shown):valid {
+    outline: 2px solid var(--clr-success);
 }
 
-input:user-invalid {
-    outline-color: var(--clr-error);
+input:not(:placeholder-shown):invalid {
+    outline: 2px solid var(--clr-error);
 }
 
 input:focus {
-    box-shadow: inset 3px 3px darkgray;
+    /* box-shadow: inset 1px 1px var(--inp-focus); */
+    outline: 2px solid var(--inp-focus);
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
 }

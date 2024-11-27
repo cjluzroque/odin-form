@@ -32,31 +32,45 @@
                 <div class="form-row">
                     <div class="input">
                         <label for="first-name">First Name</label>
-                        <input required type="text" name="first-name" />
+                        <input required type="text" name="first-name" placeholder="Ryan" />
                     </div>
                     <div class="input">
                         <label for="last-name">Last Name</label>
-                        <input required type="text" name="last-name" />
+                        <input required type="text" name="last-name" placeholder="Reynolds" />
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="input">
                         <label for="email">Email</label>
-                        <input required type="email" name="email" />
+                        <input required type="email" name="email" placeholder="iwishiknew@gmail.com" />
                     </div>
                     <div class="input">
                         <label for="phone">Phone Number</label>
-                        <input required type="tel" name="phone" />
+                        <input required type="tel" name="phone" placeholder="888-123-4567" />
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="input">
                         <label for="password">Password</label>
-                        <input required type="password" name="password" />
+                        <input 
+                            required 
+                            type="password" 
+                            name="password" 
+                            minlength="8" 
+                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" 
+                            title="Password must contain at least one letter and one number, minimum 8 characters"
+                            placeholder="Password"/>
                     </div>
                     <div class="input">
                         <label for="confirm-pass">Confirm Password</label>
-                        <input required type="password" name="confirm-pass" />
+                        <input 
+                            required 
+                            type="password" 
+                            name="password" 
+                            minlength="8" 
+                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" 
+                            title="Password must contain at least one letter and one number, minimum 8 characters"
+                            placeholder="Password"/>
                     </div>
                 </div>
                 <button>Create Account</button>
