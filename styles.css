@@ -12,10 +12,11 @@
 
 :root {
     --light-border: #E5E7EB;
-    --clr-success: green;
-    --clr-error: red;
+    --clr-success: rgb(0, 199, 0);
+    --clr-error: rgb(255, 37, 37);
     --inp-focus: lightblue; 
-    --site-bg: black;
+    --site-bg: rgb(35, 35, 35);
+    --input-card: rgb(110, 110, 110);
     --right-bg: lightgray;
     --form-bg: white;
 }
@@ -31,7 +32,7 @@ body {
 
 .green-bg {
     height: 100%;
-    width: 500px;
+    width: 450px;
 }
 
 .logo {
@@ -62,12 +63,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:"Open Sans", sans-serif;
+    width: 100vw;
 }
 
 .input-area {
-    box-shadow: 3px 1px 1px 1px ;
-    height: 250px;
+    box-shadow: 3px 1px 10px 1px var(--input-card);
+    height: 300px;
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: var(--form-bg);
@@ -76,6 +78,10 @@ body {
 
 .form-row {
     display: flex;
+}
+
+h1, .form-row {
+    margin-left: 0.5em;
 }
 
 .input {
@@ -94,11 +100,20 @@ body {
     padding: 0.8rem;
 }
 
+label {
+    margin-bottom: 0.2em;
+}
+
 
 input {
     outline: 1px solid var(--light-border);
     border-radius: 5px;
     height: 30px;
+    margin-right: 1.5em;
+}
+
+input::placeholder {
+    font-size: 0.8rem;
 }
 
 input:not(:placeholder-shown):valid {
@@ -123,5 +138,6 @@ button {
 }
 
 .sign-in, button {
-    margin: 0.5em;
+    margin-top: 0.5em;
+    margin-left: 1.5em;
 }
