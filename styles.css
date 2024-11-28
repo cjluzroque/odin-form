@@ -68,7 +68,7 @@ body {
 }
 
 .input-area {
-    box-shadow: 3px 1px 10px 1px var(--input-card);
+    box-shadow: 1px 2px 10px 1px var(--input-card);
     height: 300px;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -91,8 +91,12 @@ body {
     margin: 0.3em;
 }
 
+.input:hover {
+    color: #698e48;
+}
+
 .desc {
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     font-size: 1.2em;
 }
 
@@ -104,12 +108,12 @@ label {
     margin-bottom: 0.2em;
 }
 
-
 input {
     outline: 1px solid var(--light-border);
     border-radius: 5px;
     height: 35px;
-    margin-right: 1.5em;
+    margin-right: 2em;
+    width: 200px;
 }
 
 input::placeholder {
@@ -135,13 +139,29 @@ input:focus {
 
 button {
     background-color: #596D48;
+    box-shadow: 1px 2px 3px 0.5px var(--input-card);
     color: white;
     height: 40px;
     width: 150px;
     border-radius: 5px;
+    border-width: 1px;
+}
+
+button:hover {
+    background-color: #698e48;
 }
 
 .sign-in, button {
     margin-top: 0.5em;
     margin-left: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #698e48;
 }
