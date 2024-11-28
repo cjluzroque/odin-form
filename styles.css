@@ -80,7 +80,7 @@ body {
     display: flex;
 }
 
-h1, .form-row {
+.form-title, .form-row {
     margin-left: 0.5em;
 }
 
@@ -108,12 +108,16 @@ label {
 input {
     outline: 1px solid var(--light-border);
     border-radius: 5px;
-    height: 30px;
+    height: 35px;
     margin-right: 1.5em;
 }
 
 input::placeholder {
     font-size: 0.8rem;
+}
+
+input:focus::placeholder {
+    color: transparent;
 }
 
 input:not(:placeholder-shown):valid {
