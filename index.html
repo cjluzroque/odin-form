@@ -17,60 +17,82 @@
     </div>
     <div class="right">
         <div class="desc">
-            <div>
-                This is not a real online service! You know you need something like this in you life to help you realize your deepest dreams! Sign up now to get started!
+            <div class="main-desc">
+                This is not a real online service! You know you need something like this in you life to help you realize your deepest dreams! Sign up <em>now</em> to get started!
             </div>
-            <div>
+            <div class="sub-desc">
                 You know you want to!
             </div>
         </div>
         <div class="form-area">
-            <h1>
-                Let's do this
-            </h1>
             <form action="">
-                <div class="form-row">
-                    <div class="input">
-                        <label for="first-name">First Name</label>
-                        <input required type="text" name="first-name" placeholder="Ryan" />
+                <div class="input-area">
+                    <h1>
+                        Let's do this
+                    </h1>
+                    <div class="form-row">
+                        <div class="input">
+                            <label for="first-name">First Name</label>
+                            <input 
+                                required 
+                                type="text" 
+                                name="first-name" 
+                                pattern="[A-Za-z]+"
+                                title="Please enter your first name"
+                                placeholder="Ryan" />
+                        </div>
+                        <div class="input">
+                            <label for="last-name">Last Name</label>
+                            <input 
+                                required 
+                                type="text" 
+                                name="last-name" 
+                                pattern="[A-Za-z]+"
+                                title="Please enter your last name"
+                                placeholder="Reynolds" />
+                        </div>
                     </div>
-                    <div class="input">
-                        <label for="last-name">Last Name</label>
-                        <input required type="text" name="last-name" placeholder="Reynolds" />
+                    <div class="form-row">
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input 
+                                required 
+                                type="email" 
+                                name="email" 
+                                placeholder="iwishiknew@gmail.com" />
+                        </div>
+                        <div class="input">
+                            <label for="phone">Phone Number</label>
+                            <input 
+                                required 
+                                type="tel" 
+                                name="phone" 
+                                placeholder="888-123-4567" />
+                        </div>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="input">
-                        <label for="email">Email</label>
-                        <input required type="email" name="email" placeholder="iwishiknew@gmail.com" />
-                    </div>
-                    <div class="input">
-                        <label for="phone">Phone Number</label>
-                        <input required type="tel" name="phone" placeholder="888-123-4567" />
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="input">
-                        <label for="password">Password</label>
-                        <input 
-                            required 
-                            type="password" 
-                            name="password" 
-                            minlength="8" 
-                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" 
-                            title="Password must contain at least one letter and one number, minimum 8 characters"
-                            placeholder="Password"/>
-                    </div>
-                    <div class="input">
-                        <label for="confirm-pass">Confirm Password</label>
-                        <input 
-                            required 
-                            type="password" 
-                            name="password" 
-                            minlength="8" 
-                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" 
-                            title="Password must contain at least one letter and one number, minimum 8 characters"
-                            placeholder="Password"/>
+                    <div class="form-row">
+                        <div class="input">
+                            <label for="password">Password</label>
+                            <input 
+                                required 
+                                type="password" 
+                                name="password" 
+                                minlength="8" 
+                                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" 
+                                title="Password must contain at least one letter and one number, minimum 8 characters"
+                                placeholder="Password"/>
+                        </div>
+                        <div class="input">
+                            <label for="confirm-pass">Confirm Password</label>
+                            <input 
+                                required 
+                                type="password" 
+                                name="password" 
+                                minlength="8" 
+                                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" 
+                                title="Password must contain at least one letter and one number, minimum 8 characters"
+                                placeholder="Confirm Password"/>
+                        </div>
                     </div>
                 </div>
                 <button>Create Account</button>
