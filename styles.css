@@ -33,7 +33,7 @@ body {
 
 .green-bg {
     height: 100%;
-    width: 450px;
+    width: 500px;
 }
 
 .logo {
@@ -47,16 +47,17 @@ body {
     margin: auto;
     height: 150px;
     background: rgba(0, 0, 0, .4);
+    padding: 6em;
 }
 
 .logo-image {
-    height: 75%;
+    height: 150px;
 }
 
 .logo-text {
     color: white;
     font-family: "norse";
-    font-size: 75px;
+    font-size: 80px;
 }
 
 .right {
