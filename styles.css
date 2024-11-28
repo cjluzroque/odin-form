@@ -19,6 +19,13 @@
     --input-card: rgb(110, 110, 110);
     --right-bg: lightgray;
     --form-bg: white;
+    --green-hover: #698e48;
+}
+
+html {
+    position:relative;
+    top: 0;
+    bottom: 0;
 }
 
 body {
@@ -92,7 +99,7 @@ body {
 }
 
 .input:hover {
-    color: #698e48;
+    color: var(--green-hover);
 }
 
 .desc {
@@ -118,6 +125,7 @@ input {
 
 input::placeholder {
     font-size: 0.8rem;
+    color: 
 }
 
 input:focus::placeholder {
@@ -148,7 +156,7 @@ button {
 }
 
 button:hover {
-    background-color: #698e48;
+    background-color: var(--green-hover);
 }
 
 .sign-in, button {
@@ -163,5 +171,5 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #698e48;
+    color: var(--green-hover);
 }
